@@ -42,9 +42,9 @@
   DECL3(func, redop, int64_t) \
   DECL3(func, redop, uint64_t) \
   DECL3(func, redop, half) \
-  DECL3(func, redop, nv_bfloat16) \
   DECL3(func, redop, float) \
-  DECL3(func, redop, double)
+  DECL3(func, redop, double) \
+  DECL3(func, redop, nv_bfloat16)
 
 #define DECL(func) \
   DECL2(func, Sum) \
