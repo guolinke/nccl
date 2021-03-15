@@ -31,7 +31,7 @@ __device__ struct ncclShmemData* ncclShmem;
   NCCL_FUNC4(func, redop, half), \
   NCCL_FUNC4(func, redop, float), \
   NCCL_FUNC4(func, redop, double), \
-  NCCL_FUNC4(func, redop, nv_bfloat16), \
+  NCCL_FUNC4(func, redop, nv_bfloat16)
 #define NCCL_FUNCS3B(func, redop) \
   NCCL_FUNC4(func, redop, int8_t), \
   NCCL_FUNC4(func, redop, int8_t), \
