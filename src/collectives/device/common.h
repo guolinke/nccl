@@ -132,6 +132,9 @@ __global__ void NCCL_KERN_NAME(coll, op, dtype)(struct ncclColl firstColl) { \
 #elif NCCL_TYPE == 8
 #define IMPL_COLL2(coll, op, ncclFunc, ncclColl, ncclOp) \
   IMPL_COLL3(coll, op, ncclFunc, f64, double,   ncclColl, ncclOp, ncclFloat64)
+#elif NCCL_TYPE == 9
+#define IMPL_COLL2(coll, op, ncclFunc, ncclColl, ncclOp) \
+  IMPL_COLL3(coll, op, ncclFunc, bf16, nv_bfloat16,   ncclColl, ncclOp, ncclBfloat16)
 #endif
 
 // Reduction define all functions

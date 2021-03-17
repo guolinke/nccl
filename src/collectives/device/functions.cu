@@ -30,8 +30,10 @@ __device__ volatile uint64_t* ncclShmem;
   NCCL_FUNC4(coll, op, u64), \
   NCCL_FUNC4(coll, op, f16), \
   NCCL_FUNC4(coll, op, f32), \
-  NCCL_FUNC4(coll, op, f64)
+  NCCL_FUNC4(coll, op, f64), \
+  NCCL_FUNC4(coll, op, bf16)
 #define NCCL_FUNCS3B(coll, op) \
+  NCCL_FUNC4(coll, op,  i8), \
   NCCL_FUNC4(coll, op,  i8), \
   NCCL_FUNC4(coll, op,  i8), \
   NCCL_FUNC4(coll, op,  i8), \

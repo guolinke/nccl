@@ -29,8 +29,10 @@
   (void*)NCCL_FUNC4(coll, op, u64), \
   (void*)NCCL_FUNC4(coll, op, f16), \
   (void*)NCCL_FUNC4(coll, op, f32), \
-  (void*)NCCL_FUNC4(coll, op, f64)
+  (void*)NCCL_FUNC4(coll, op, f64), \
+  (void*)NCCL_FUNC4(coll, op, bf16)
 #define NCCL_FUNCS3B(coll, op) \
+  (void*)NCCL_FUNC4(coll, op,  i8), \
   (void*)NCCL_FUNC4(coll, op,  i8), \
   (void*)NCCL_FUNC4(coll, op,  i8), \
   (void*)NCCL_FUNC4(coll, op,  i8), \
